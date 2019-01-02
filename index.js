@@ -4,4 +4,4 @@ const client = new Client({
     password:'btcnode123',
     port: 8332,
 host:'127.0.0.1'});
-    client.getInfo((error, help) => console.log(help));
+client.getInfo().then((help) => console.log(help))
